@@ -1,0 +1,196 @@
+:root {
+  --main-border-size: 50px;
+  --main-border-color-right: #ffc300;
+  --main-border-color-bottom: #e6b000;
+  --main-color: #003cff;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--main-color);
+}
+
+.section-right {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 90%;
+  width: var(--main-border-size);
+  background-color: var(--main-border-color-right);
+}
+
+.section-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: var(--main-border-size);
+  width: 90%;
+}
+
+.inner-section-bottom {
+  display: inline-flex;
+  width: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: var(--main-border-size);
+  margin-bottom: var(--main-border-size);
+  background-color: #fff;
+  border-radius: 2.5px 2.5px 2.5px 2.5px;
+  -webkit-box-shadow: 5px 5px 5px #000;
+  -moz-box-shadow: 5px 5px 5px #000;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.abstract {
+  background-color: #fff;
+}
+#rectangle-bottom {
+  width: 100%;
+  height: var(--main-border-size);
+  background: var(--main-border-color-bottom);
+}
+
+#rectangle-right {
+  clear: both;
+  width: var(--main-border-size);
+  height: 100%;
+  background: var(--main-border-color-right);
+}
+
+#triangle-topright {
+  width: 0;
+  height: 0;
+  border-top: var(--main-border-size) solid var(--main-border-color-bottom);
+  border-left: var(--main-border-size) solid transparent;
+}
+
+#triangle-bottomleft-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  clear: both;
+  border-bottom: var(--main-border-size) solid var(--main-border-color-bottom);
+  border-right: var(--main-border-size) solid transparent;
+  background-color: var(--main-border-color-right);
+}
+
+#triangle-bottomleft-right {
+  float: right;
+  width: 0;
+  height: 0;
+  border-bottom: var(--main-border-size) solid var(--main-border-color-right);
+  border-right: var(--main-border-size) solid transparent;
+  background: var(--main-color);
+}
+
+/*Mobile Styles*/
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #f09a9d;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .sign-up,
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  :root {
+    --main-border-size: 55px;
+  }
+}
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans"); */
+/* body {
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  background-color: red !important;
+} */
+/*
+html {
+  height: 100%;
+}
+
+#main {}
+
+.container {
+  margin: auto;
+}
+
+#main-header {
+  border-bottom: solid 10px #6892D5 ;
+  background-color: #F8FCFB ;
+}
+
+#game {
+  background-color: #F8FCFB ;
+}
+
+p,
+form,
+input,
+button {
+  font-family: 'Raleway'
+} */
+
+/* html,
+body {
+	margin: 0 5% 0 5%;
+	height: 100%;
+} */
+
+.vertical-center {
+  min-height: 100%; /* Fallback for vh unit */
+  min-height: 100vh; /* You might also want to use
+                        'height' property instead.
+                        
+                       Note that for percentage values of
+                        'height' or 'min-height' properties,
+                        the 'height' of the parent element
+                        should be specified explicitly.
+  
+                       In this case the parent of '.vertical-center'
+                        is the <body> element */
+  /* Make it a flex container */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; /* Align the bootstrap's container vertically */
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* In legacy web browsers such as Firefox 9
+     we need to specify the width of the flex container */
+  width: 100%;
+  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+     hence the bootstrap's container won't be aligned to the center anymore.
+  
+    Therefore, we should use the following declarations to get it centered again */
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.container {
+  background-color: #6ce6cd;
+}
