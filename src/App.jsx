@@ -6,8 +6,11 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      contentHeight: 0,
-      contentWidth: 0
+      bottomBarHeight: 0,
+      bottomBarWidth: 0,
+      rightBarHeight: 0,
+      rightBarWidth: 0,
+      backgroundColor: "#003cff"
     };
 
     this.contentSize = this.contentSize.bind(this);
@@ -23,37 +26,52 @@ class App extends Component {
   }
 
   contentSize() {
-    let height =
-      document.getElementById("section-right-area").offsetHeight - 50;
-    let width =
-      document.getElementById("inner-section-bottom").offsetWidth - 50;
+    let content = document.getElementById("content");
+    let style = content.currentStyle || window.getComputedStyle(content);
 
-    this.setState({ contentHeight: height, contentWidth: width });
+    let bottomHeight =
+      window.innerHeight - content.offsetHeight - parseInt(style.marginTop);
+    let bottomWidth = window.innerWidth - parseInt(style.marginLeft);
+    let rightHeight = window.innerHeight - parseInt(style.marginTop);
+    let rightWidth =
+      window.innerWidth - content.offsetWidth - parseInt(style.marginLeft);
+
+    this.setState({
+      bottomBarHeight: bottomHeight,
+      bottomBarWidth: bottomWidth,
+      rightBarHeight: rightHeight,
+      rightBarWidth: rightWidth
+    });
   }
   render() {
     console.log(this.state);
 
     return (
-      <div>
+      <div className="container">
+        <div id="content" className="content">
+          <Abstract />
+        </div>
         <div className="section-bottom">
-          <div id="inner-section-bottom" className="inner-section-bottom">
-            <div id="triangle-topright" />
-            <div id="rectangle-bottom" />
-          </div>
-          <div id="section-right-area" className="section-right">
-            <div id="triangle-bottomleft-right" />
-            <div id="rectangle-right" />
-          </div>
-          <div id="triangle-bottomleft-bottom" />
           <div
-            className="content"
+            id="shape-bottom"
+            className="inner-section-bottom"
             style={{
-              height: this.state.contentHeight,
-              width: this.state.contentWidth
+              height: this.state.bottomBarHeight,
+              width: this.state.bottomBarWidth,
+              borderBottomWidth:this.state.bottomBarHeight,
+              borderLeftWidth: this.state.bottomBarWidth,
+              borderLeftColor: "#003cff",
+              borderBottomColor: "transparent"
             }}
-          >
-            <Abstract />
-          </div>
+          />
+          <div
+            id="section-right-area"
+            className="section-right"
+            style={{
+              height: this.state.rightBarHeight,
+              width: this.state.rightBarWidth
+            }}
+          />
         </div>
       </div>
     );

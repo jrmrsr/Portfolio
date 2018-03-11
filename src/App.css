@@ -16,30 +16,44 @@ html {
   position: fixed;
   right: 0;
   bottom: 0;
-  height: 90%;
-  width: var(--main-border-size);
   background-color: var(--main-border-color-right);
 }
 
-.section-bottom {
-  position: fixed;
-  bottom: 0;
+.section-right:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 1px solid var(--main-color);
+  border-bottom: 1px solid transparent;
+}
+.inner-section-bottom {
+  position: absolute;
   right: 0;
-  height: var(--main-border-size);
-  width: 90%;
+  bottom: 0;
 }
 
-.inner-section-bottom {
-  display: inline-flex;
-  width: 100%;
-}
+/* .inner-section-bottom:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 75px solid transparent;
+  border-bottom: 250px solid var(--main-color);
+} */
 
 .content {
-  position: fixed;
-  bottom: 0;
+  height: 66.6%;
+  width: 66.6%;
+  position: absolute; /*it can be fixed too*/
+  left: 0;
   right: 0;
-  margin-right: var(--main-border-size);
-  margin-bottom: var(--main-border-size);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  /*this to solve "the content will not be cut when the window is smaller than the content": */
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
   background-color: #fff;
   border-radius: 2.5px 2.5px 2.5px 2.5px;
   -webkit-box-shadow: 5px 5px 5px #000;
@@ -50,10 +64,13 @@ html {
 .abstract {
   background-color: #fff;
 }
-#rectangle-bottom {
-  width: 100%;
-  height: var(--main-border-size);
-  background: var(--main-border-color-bottom);
+#content {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#shape-bottom {
+  font-size: 0px;
+  line-height: 0%;
+  background-color: var(--main-border-color-bottom);
 }
 
 #rectangle-right {
