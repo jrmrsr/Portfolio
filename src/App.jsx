@@ -30,11 +30,14 @@ class App extends Component {
     let style = content.currentStyle || window.getComputedStyle(content);
 
     let bottomHeight =
-      window.innerHeight - content.offsetHeight - parseInt(style.marginTop);
-    let bottomWidth = window.innerWidth - parseInt(style.marginLeft);
-    let rightHeight = window.innerHeight - parseInt(style.marginTop);
+      window.innerHeight -
+      content.offsetHeight -
+      parseInt(style.marginTop, 10) +
+      1;
+    let bottomWidth = window.innerWidth - parseInt(style.marginLeft, 10);
+    let rightHeight = window.innerHeight - parseInt(style.marginTop, 10);
     let rightWidth =
-      window.innerWidth - content.offsetWidth - parseInt(style.marginLeft);
+      window.innerWidth - content.offsetWidth - parseInt(style.marginLeft, 10);
 
     this.setState({
       bottomBarHeight: bottomHeight,
@@ -50,6 +53,11 @@ class App extends Component {
       <div className="container">
         <div id="content" className="content">
           <Abstract />
+          <div className="flex-container">
+            <div id="quote" />
+            <div id="menu" />
+            <div id="design" />
+          </div>
         </div>
         <div className="section-bottom">
           <div
@@ -57,22 +65,18 @@ class App extends Component {
             className="inner-section-bottom"
             style={{
               height: this.state.bottomBarHeight,
-              width: this.state.bottomBarWidth,
-              borderBottomWidth:this.state.bottomBarHeight,
-              borderLeftWidth: this.state.bottomBarWidth,
-              borderLeftColor: "#003cff",
-              borderBottomColor: "transparent"
-            }}
-          />
-          <div
-            id="section-right-area"
-            className="section-right"
-            style={{
-              height: this.state.rightBarHeight,
-              width: this.state.rightBarWidth
+              width: this.state.bottomBarWidth
             }}
           />
         </div>
+        <div
+          id="section-right-area"
+          className="section-right"
+          style={{
+            height: this.state.rightBarHeight,
+            width: this.state.rightBarWidth
+          }}
+        />
       </div>
     );
   }

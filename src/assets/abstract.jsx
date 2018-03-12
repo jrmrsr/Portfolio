@@ -9,7 +9,7 @@ class Abstract extends Component {
   render() {
     return (
       <div>
-        <h1 className="abstract">Hello</h1>
+        <h1 className="abstract">Jose Rondon</h1>
       </div>
     );
   }

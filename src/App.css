@@ -17,56 +17,53 @@ html {
   right: 0;
   bottom: 0;
   background-color: var(--main-border-color-right);
+  -webkit-clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 89%);
+  clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 89%);
 }
 
-.section-right:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-right: 1px solid var(--main-color);
-  border-bottom: 1px solid transparent;
-}
 .inner-section-bottom {
   position: absolute;
   right: 0;
   bottom: 0;
+  -webkit-clip-path: polygon(0 0, 89% 0, 100% 100%, 11% 100%);
+  clip-path: polygon(0 0, 89% 0, 100% 100%, 11% 100%);
 }
 
-/* .inner-section-bottom:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-right: 75px solid transparent;
-  border-bottom: 250px solid var(--main-color);
-} */
-
 .content {
-  height: 66.6%;
-  width: 66.6%;
-  position: absolute; /*it can be fixed too*/
+  height: 80%;
+  width: 80%;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   margin: auto;
-
-  /*this to solve "the content will not be cut when the window is smaller than the content": */
   max-width: 100%;
   max-height: 100%;
   overflow: auto;
   background-color: #fff;
   border-radius: 2.5px 2.5px 2.5px 2.5px;
-  -webkit-box-shadow: 5px 5px 5px #000;
-  -moz-box-shadow: 5px 5px 5px #000;
-  box-shadow: 5px 5px 5px #000;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .abstract {
+  margin-left: 5%;
+  margin-top: 2.5%;
   background-color: #fff;
+  font-size: 2.5em;
+  font-weight: 400;
 }
+
 #content {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
+
 #shape-bottom {
   font-size: 0px;
   line-height: 0%;
@@ -80,48 +77,51 @@ html {
   background: var(--main-border-color-right);
 }
 
-#triangle-topright {
-  width: 0;
-  height: 0;
-  border-top: var(--main-border-size) solid var(--main-border-color-bottom);
-  border-left: var(--main-border-size) solid transparent;
+#quote {
+  height: 100px;
+  width: 100px;
+  align-self: center;
+  background-color: slategrey;
 }
 
-#triangle-bottomleft-bottom {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  clear: both;
-  border-bottom: var(--main-border-size) solid var(--main-border-color-bottom);
-  border-right: var(--main-border-size) solid transparent;
-  background-color: var(--main-border-color-right);
+#menu {
+  height: 100px;
+  width: 100px;
+  align-self: flex-end;
+  background-color: beige;
 }
 
-#triangle-bottomleft-right {
-  float: right;
-  width: 0;
-  height: 0;
-  border-bottom: var(--main-border-size) solid var(--main-border-color-right);
-  border-right: var(--main-border-size) solid transparent;
-  background: var(--main-color);
+#design {
+  height: 100px;
+  width: 100px;
+  background-color: blueviolet;
 }
 
 /*Mobile Styles*/
+
 @media only screen and (max-width: 400px) {
   body {
     background-color: #f09a9d;
   }
+  #content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
 }
 
 /* Tablet Styles */
+
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  .sign-up,
-  .feature-1,
-  .feature-2,
-  .feature-3 {
-    width: 50%;
+  .abstract {
+    margin-left: 25%;
+    margin-top: 20%;
+    background-color: #fff;
+    font-size: 2em;
+    font-weight: 400;
+  }
+  #content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
   }
 }
 
@@ -129,85 +129,4 @@ html {
   :root {
     --main-border-size: 55px;
   }
-}
-/* @import url("https://fonts.googleapis.com/css?family=Open+Sans"); */
-/* body {
-  font-family: 'Lato', sans-serif;
-  font-size: 17px;
-  line-height: 1.5em;
-  margin: 0;
-  padding: 0;
-  background-color: red !important;
-} */
-/*
-html {
-  height: 100%;
-}
-
-#main {}
-
-.container {
-  margin: auto;
-}
-
-#main-header {
-  border-bottom: solid 10px #6892D5 ;
-  background-color: #F8FCFB ;
-}
-
-#game {
-  background-color: #F8FCFB ;
-}
-
-p,
-form,
-input,
-button {
-  font-family: 'Raleway'
-} */
-
-/* html,
-body {
-	margin: 0 5% 0 5%;
-	height: 100%;
-} */
-
-.vertical-center {
-  min-height: 100%; /* Fallback for vh unit */
-  min-height: 100vh; /* You might also want to use
-                        'height' property instead.
-                        
-                       Note that for percentage values of
-                        'height' or 'min-height' properties,
-                        the 'height' of the parent element
-                        should be specified explicitly.
-  
-                       In this case the parent of '.vertical-center'
-                        is the <body> element */
-  /* Make it a flex container */
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; /* Align the bootstrap's container vertically */
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  /* In legacy web browsers such as Firefox 9
-     we need to specify the width of the flex container */
-  width: 100%;
-  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
-     hence the bootstrap's container won't be aligned to the center anymore.
-  
-    Therefore, we should use the following declarations to get it centered again */
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-.container {
-  background-color: #6ce6cd;
 }
