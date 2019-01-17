@@ -14,7 +14,7 @@ const SVG = ({
             </clipPath>
         </defs>
         <g clipPath="url(#clip_0)">
-            <text fill="#f0f0f0" stroke="none" fontSize="123" fontWeight="bold" fontFamily="Roboto Black, Roboto" x="0.31713867" y="117.72266">
+            <text fill="#f0f0f0" stroke="none" fontSize="123" fontWeight="bold" fontFamily="Sarabun Extra-Bold, Sarabun" x="0.31713867" y="117.72266">
                     JR
             </text>
         </g>

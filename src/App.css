@@ -1,6 +1,6 @@
 body {
   background-color: #f0f0f0;
-  font-family: "Roboto";
+  font-family: "Sarabun";
   color: #313131;
 }
 hr {
@@ -10,7 +10,7 @@ hr {
   border: none;
 }
 h1 {
-  font-weight: 900;
+  font-weight: 800;
   font-size: 4em;
 }
 h2 {
@@ -22,7 +22,9 @@ button {
 }
 button:focus {outline:0;}
 p {
-  font-size: 1.33em;
+  font-size: 1.73em;
+  line-height: 1.5em;
+  margin-top: 1%;
 }
 a {
   text-decoration: none;
@@ -68,8 +70,8 @@ a:hover {
 }
 .sidebar-button h2 {
   margin: 5%;
-  font-family: 'Roboto';
-  font-weight: 900;
+  font-family: 'Sarabun';
+  font-weight: 800;
 }
 .sidebar-button:hover {
   background-color: #FF3419;
@@ -106,6 +108,7 @@ a:hover {
   margin: 5%;
   margin-bottom: 1%;
   width: 100%;
+  margin-top: 1%;
 }
 .main-header-text {
   margin: 0% 5% 0% 5%;
@@ -166,8 +169,9 @@ a:hover {
   height: 3em;
   background-color: #f0f0f0;
   border: none;
-  width: 60px;
+  width: 0;
   transition: all 0.25s ease;
+  padding-left: 5px;
 }
 .bottom {  
   width: 33%;
@@ -183,6 +187,7 @@ a:hover {
 .bottom h2{
   margin: 0;
   font-size: 2em;
+  font-family: "Sarabun"
 }
 .bottom:hover {
   background-color: #FF3419;
@@ -275,7 +280,10 @@ a:hover {
 .leaflet-popup-tip-container {
   color: #f0f0f0;
 }
-@media screen and (min-width: 1366px) {
+.project-title {
+  font-size: 2.9em;
+}
+@media screen and (min-width: 1300px) {
   hr {
     height: 10px;
     width: 100px; 
@@ -284,19 +292,29 @@ a:hover {
     font-size: 4em;
   }
 }
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1300px) {
   h1 {
     font-size: 3.25em;
   }
   hr {
     height: 7.5px;
     width: 75px; 
-  } 
+  }
+  p {
+    font-size: 1.5em;
+    line-height: 1.33em;
+  }
+  .project-title {
+    font-size: 2.75em;
+  }
 }
 @media screen and (max-width: 1000px) {
   .container {
     margin: 2.5%;
     max-width: 85%;
+  }
+  .project-title {
+    font-size: 2.33em;
   }
 }
 @media screen and (max-width: 812px) {
@@ -327,7 +345,7 @@ a:hover {
   }
   .sidebar-button h3 {
     margin-left: 10%;
-    font-weight: 900;
+    font-weight: 800;
   }
   .main-body {
     margin-left: 1%;

@@ -11,7 +11,7 @@ class App extends Component {
       aboutHeader: true,
       projects: false,
       aboutInfo: false,
-      projectInfo: [true,false,false,false,false],
+      projectInfo: [true,false,false,false,false,false,false,false],
       hideNav: false
     };
   }
@@ -32,7 +32,7 @@ class App extends Component {
       aboutHeader: true,
       projects: false,
       aboutInfo: false,
-      projectInfo: [true,false,false,false,false]
+      projectInfo: [true,false,false,false,false,false,false,false]
     })
   }
   handleClickProjects = () => {
@@ -40,7 +40,7 @@ class App extends Component {
       aboutHeader: false,
       projects: true,
       aboutInfo: false,
-      projectInfo: [true,false,false,false,false]
+      projectInfo: [true,false,false,false,false,false,false,false]
     })
   }
   handleClickAboutInfo = () => {
@@ -49,12 +49,12 @@ class App extends Component {
       aboutHeader: true,
       projects: false,
       aboutInfo: info,
-      projectInfo: [true,false,false,false,false]
+      projectInfo: [true,false,false,false,false,false,false,false]
     })
   }
   handleClickAbstract = () => {
     let newProjectInfo = this.state.projectInfo.slice()
-    newProjectInfo = [!this.state.projectInfo[0],!this.state.projectInfo[1],false,false,false]
+    newProjectInfo = [!this.state.projectInfo[0],!this.state.projectInfo[1],false,false,false,false,false,false]
     this.setState({
       projectInfo: newProjectInfo
     })
@@ -62,15 +62,15 @@ class App extends Component {
 
   handleClickPpt = () => {
     let newProjectInfo = this.state.projectInfo.slice()
-    newProjectInfo = [!this.state.projectInfo[0],false,!this.state.projectInfo[2],false,false]
+    newProjectInfo = [!this.state.projectInfo[0],false,!this.state.projectInfo[2],false,false,false,false,false]
     this.setState({
       projectInfo: newProjectInfo
     })
   }
 
-  handleClickBike = () => {
+  handleClickSolarCar = () => {
     let newProjectInfo = this.state.projectInfo.slice()
-    newProjectInfo = [!this.state.projectInfo[0],false,false,!this.state.projectInfo[3],false]
+    newProjectInfo = [!this.state.projectInfo[0],false,false,!this.state.projectInfo[3],false,false,false,false]
     this.setState({
       projectInfo: newProjectInfo
     })
@@ -78,21 +78,35 @@ class App extends Component {
 
   handleClickEverydayCal = () => {
     let newProjectInfo = this.state.projectInfo.slice()
-    newProjectInfo = [!this.state.projectInfo[0],false,false,false,!this.state.projectInfo[4]]
+    newProjectInfo = [!this.state.projectInfo[0],false,false,false,!this.state.projectInfo[4],false,false,false]
     this.setState({
       projectInfo: newProjectInfo
     })
   }
-  
-  handleClickEverydayCal = () => {
+
+  handleClickURA = () => {
     let newProjectInfo = this.state.projectInfo.slice()
-    newProjectInfo = [!this.state.projectInfo[0],false,false,false,!this.state.projectInfo[4]]
+    newProjectInfo = [!this.state.projectInfo[0],false,false,false,false,!this.state.projectInfo[5],false,false]
     this.setState({
       projectInfo: newProjectInfo
     })
   }
 
+  handleClickWarriorHome = () => {
+    let newProjectInfo = this.state.projectInfo.slice()
+    newProjectInfo = [!this.state.projectInfo[0],false,false,false,false,false,!this.state.projectInfo[6],false]
+    this.setState({
+      projectInfo: newProjectInfo
+    })
+  }
 
+  handleClickEWB = () => {
+    let newProjectInfo = this.state.projectInfo.slice()
+    newProjectInfo = [!this.state.projectInfo[0],false,false,false,false,false,false,!this.state.projectInfo[7]]
+    this.setState({
+      projectInfo: newProjectInfo
+    })
+  }
 
   render() {
     return (
@@ -121,9 +135,12 @@ class App extends Component {
           {this.state.projects && <Projects
             projectInfo={this.state.projectInfo}
             handleClickAbstract={this.handleClickAbstract}
-            handleClickBike={this.handleClickBike}
+            handleClickSolarCar={this.handleClickSolarCar}
             handleClickPpt={this.handleClickPpt}
             handleClickEverydayCal={this.handleClickEverydayCal}
+            handleClickEWB={this.handleClickEWB}
+            handleClickURA={this.handleClickURA}
+            handleClickWarriorHome={this.handleClickWarriorHome}
             />}
           {this.state.aboutHeader && <About
             handleClickAboutInfo={this.handleClickAboutInfo}
