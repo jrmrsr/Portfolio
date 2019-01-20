@@ -338,7 +338,7 @@ a:hover {
   .sidebar-button {
     margin-top: 0;
     margin-bottom: 0; 
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: center;
     width: 40%;
     border: none;
@@ -367,7 +367,7 @@ a:hover {
     margin: 2.5%;
   }
   .main-header-text {
-    margin-top: 50%;
+    margin-top: 30%;
   }
   .map-container {
     height: 300px;
