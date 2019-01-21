@@ -45,17 +45,17 @@ export default class Projects extends Component {
       <div className={this.props.projectInfo[0] ? "container animated fadeInUpBig" : "container"}>
         {this.props.projectInfo[0] && <span><h2 className="project-title">Abstract</h2><hr /></span>}
         {this.props.projectInfo[0] && <Abstract/>}
-        {this.props.projectInfo[0] && <span><h2 className="project-title">Plant Maintenance Tool{buttonPpt}</h2><hr /></span>}
+        {this.props.projectInfo[0] && <span><h2 className="project-title" onClick={() => this.props.handleClickPpt()}>Plant Maintenance Tool{buttonPpt}</h2><hr /></span>}
         {this.props.projectInfo[2] && <PlantProblemTool button={buttonPpt}/>}
-        {this.props.projectInfo[0] && <span><h2 className="project-title">Midnight Sun Solar Car{buttonSolar}</h2><hr /></span>}
+        {this.props.projectInfo[0] && <span><h2 className="project-title" onClick={() => this.props.handleClickSolarCar()}>Midnight Sun Solar Car{buttonSolar}</h2><hr /></span>}
         {this.props.projectInfo[3] && <SolarCar button={buttonSolar}/>}
-        {this.props.projectInfo[0] && <span><h2 className="project-title">The Everyday Calendar{buttonEverydayCal}</h2><hr /></span>}
+        {this.props.projectInfo[0] && <span><h2 className="project-title" onClick={() => this.props.handleClickEverydayCal()}>The Everyday Calendar{buttonEverydayCal}</h2><hr /></span>}
         {this.props.projectInfo[4] && <EverydayCal button={buttonEverydayCal}/>}
-        {this.props.projectInfo[0] && <span><h2 className="project-title">Undergrad Research Assistant{buttonURA}</h2><hr /></span>}
+        {this.props.projectInfo[0] && <span><h2 className="project-title" onClick={() => this.props.handleClickURA()}>Undergrad Research Assistant{buttonURA}</h2><hr /></span>}
         {this.props.projectInfo[5] && <URA button={buttonURA}/>}
-        {this.props.projectInfo[0] && <span><h2 className="project-title">Warrior Home{buttonWarriorHome}</h2><hr /></span>}
+        {this.props.projectInfo[0] && <span><h2 className="project-title"onClick={() => this.props.handleClickWarriorHome()}>Warrior Home{buttonWarriorHome}</h2><hr /></span>}
         {this.props.projectInfo[6] && <WarriorHome button={buttonWarriorHome}/>}
-        {this.props.projectInfo[0] && <span><h2 className="project-title">Engineers Without Borders{buttonEWB}</h2><hr /></span>}
+        {this.props.projectInfo[0] && <span><h2 className="project-title" onClick={() => this.props.handleClickEWB()}>Engineers Without Borders{buttonEWB}</h2><hr /></span>}
         {this.props.projectInfo[7] && <EWB button={buttonEWB}/>}
         {this.props.projectInfo[0] && <WorkMap/>}
       </div>

@@ -182,11 +182,12 @@ a:hover {
   border-top: none;
   border-bottom: 5px solid #313131;
   text-align: left;
+  font-size: 1.5em;
   transition:all 0.25s ease; 
 }
 .bottom h2{
   margin: 0;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Sarabun"
 }
 .bottom:hover {
@@ -289,12 +290,15 @@ a:hover {
     width: 100px; 
   }  
   h1 {
-    font-size: 4em;
+    font-size: 5em;
+  }
+  .sidebar-button {
+    font-size: 1.5em;
   }
 }
 @media screen and (max-width: 1300px) {
   h1 {
-    font-size: 3.25em;
+    font-size: 3.5em;
   }
   hr {
     height: 7.5px;
@@ -315,6 +319,9 @@ a:hover {
   }
   .project-title {
     font-size: 2.33em;
+  }
+  .bottom {
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 812px) {
