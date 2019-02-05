@@ -8,8 +8,6 @@ export default class Projects extends Component {
   render() {    
     let buttonMain = <button className="main-button bounce"><span className="arrow right" /></button>
     
-    let buttonReturn = <button className="main-button bottom"><h2>> Return</h2></button>
-
     return (
       <div className="container animated fadeInUpBig">
         <span><h2 className="project-title">Abstract</h2><hr /></span>
