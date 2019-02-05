@@ -340,7 +340,7 @@ a {
 }
 @media screen and (max-width: 812px) {
   h2 {
-    font-size: 1.25em;
+    font-size: 1.2em;
   }
   hr {
     height: 7.5px;
@@ -389,6 +389,7 @@ a {
   }
   .main-header-text {
     margin-top: 30%;
+    font-size: 3.25em;
   }
   .map-container {
     height: 300px;
