@@ -1,5 +1,5 @@
 body {
-  background-color: #f0f0f0;
+  background-color: #fff;
   font-family: "Sarabun";
   color: #313131;
 }
@@ -36,7 +36,7 @@ a {
 }
 .link:hover {
   background-color: #3f88c5;
-  color: #f0f0f0;
+  color: #fff;
 }
 .container {
   margin: 5%;
@@ -50,15 +50,16 @@ a {
   bottom: 0;
   left: 0;
   height: 100%;
-  background-color: #f0f0f0;
+  background-color: #fff;
   width: 16.15555%;
-  border-right: 5px solid #000;
+  border-right: 5px solid #313131;
 }
 .sidebar hr {
-  margin-left: 5%;
+  margin-right: 5%;
 }
-.sidebar-text-full {
+.sidebar-text{
   margin: 5%;
+  font-size: 1.25em;
 }
 .sidebar-button {
   width: 100%;
@@ -77,13 +78,13 @@ a {
 }
 .sidebar-button:hover {
   background-color: #3f88c5;
-  color: #f0f0f0;
+  color: #fff;
   -webkit-transform: translateX(8%);
   transform: translateX(8%);
 }
 .sidebar-button:focus {
   background-color: #3f88c5;
-  color: #f0f0f0;
+  color: #fff;
   -webkit-transform: translateX(5%);
   transform: translateX(5%);
 }
@@ -100,7 +101,7 @@ a {
   height: 100%;
   width: 100%;
   max-width: 60%;
-  background-color: #f0f0f0;
+  background-color: #fff;
 }
 .main-body hr {
   margin-left: 5%;
@@ -141,7 +142,7 @@ a {
   align-items: center;
 }
 .icons a {
-  background-color: #f0f0f0;
+  background-color: #fff;
 }
 .logo-container {
   display: flex;
@@ -169,7 +170,7 @@ a {
 }
 .main-button {
   height: 3em;
-  background-color: #f0f0f0;
+  background-color: #fff;
   border: none;
   width: 0;
   transition: all 0.25s ease;
@@ -194,7 +195,7 @@ a {
 }
 .bottom:hover {
   background-color: #3f88c5;
-  color: #f0f0f0;
+  color: #fff;
   -webkit-transform: translateX(8%);
   transform: translateX(8%);
 }
@@ -219,7 +220,7 @@ a {
   position: fixed;
   top: 0;
   height: 50px;
-  background-color: #f0f0f0;
+  background-color: #fff;
   width: 100%;
   padding: 0;
   z-index: 2;
@@ -306,8 +307,8 @@ a {
   h1 {
     font-size: 5em;
   }
-  .sidebar-button {
-    font-size: 1.5em;
+  .sidebar-text{
+    font-size: 1.75em;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -317,6 +318,9 @@ a {
   hr {
     height: 7.5px;
     width: 75px; 
+  }
+  .sidebar-text{
+    font-size: 1.5em;
   }
   p {
     font-size: 1.5em;
@@ -348,18 +352,17 @@ a {
     margin-left: 10%; 
   }
   .sidebar hr {
-    margin-left: 10%;
+    margin-right: 10%;
   }
   .animation-area {
     display: none;
   }
-  .sidebar-text-full {
-    margin: 0;
+  .sidebar-text {
+    font-size: 1.66em;
   }
   .sidebar-button {
     margin-top: 0;
     margin-bottom: 0; 
-    font-size: 1.1em;
     text-align: center;
     width: 40%;
     border: none;

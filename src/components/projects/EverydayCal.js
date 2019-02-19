@@ -5,7 +5,7 @@ import '../../App.css';
 export default class EverydayCal extends Component {
   render() {
     return (
-      <div className="animated fadeInUpBig">
+      <div className="container-full animated fadeInUpBig">
         <span><h2 className="project-title">The Everyday Calendar</h2><hr /></span>
         <span className="img-container"><img src={everydayCalPic} alt="Everyday Calendar"/></span>
         <span><h2><a className="link" href="https://jrmrsr.github.io/Everyday-Calendar/" target="_blank" rel="noopener noreferrer">Link</a></h2></span>

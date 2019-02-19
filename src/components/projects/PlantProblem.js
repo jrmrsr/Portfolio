@@ -6,7 +6,7 @@ import '../../App.css';
 export default class PlantProblemTool extends Component {
     render() {
         return (
-            <div className="animated fadeInUpBig">
+            <div className="container-full animated fadeInUpBig">
                 <span><h2 className="project-title">Plant Maintenance Tool</h2><hr /></span>
                 <span className="img-container"><img src={EventSearch} alt="Events Search"/></span>
                 <span className="img-container"><img src={NMTER} alt="NMTER Graph"/></span>

@@ -4,7 +4,7 @@ import '../../App.css';
 export default class AboutMe extends Component {
   render() {
     return (
-      <div className="animated fadeInLeft">
+      <div className="container-full animated fadeInLeft">
         <span><h2 className="project-title animated fadeInLeft">About</h2><hr className="animated fadeInLeft" /></span>
         <span><p  className="animated fadeInLeft main-text" style={{marginTop:0}}>> I believe that our ability to 
     shape our environment is the most powerful tool humanity has. Large, physical manifestations of <a className="link" href="https://big.dk/#projects-king" target="_blank" rel="noopener noreferrer">architecture</a> can 

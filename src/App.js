@@ -49,8 +49,8 @@ class App extends Component {
                   // Using ID to get over mobile browser limitations with autofocus,
                   // such that I can apply the right bgColor on page load
                   id={this.state.aboutHeader ? "on" : ""}
-                  ><h2>> About</h2></button></Link>
-                <Link to="/Projects" className={this.state.hideNav ? "link-button" : ""}><button className="sidebar-button"><h2>> Projects</h2></button></Link>
+                  ><h2 className="sidebar-text">> About</h2></button></Link>
+                <Link to="/Projects" className={this.state.hideNav ? "link-button" : ""}><button className="sidebar-button"><h2 className="sidebar-text">> Projects</h2></button></Link>
                 <span className="icons">
                   {this.state.hideNav && <Icons name="logo" width={`40px`} height={`40px`} className="logo" viewBox="0 0 150 150"/>}
                   <a href="https://github.com/jrmrsr" target="_blank" rel="noopener noreferrer"><Icons name="github" width={`40px`} className="sidebar-link"/></a>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Abstract from './projects/Abstract';
 import WorkMap from './projects/WorkMap';
 import { Link } from 'react-router-dom';
 import '../App.css';
@@ -10,8 +9,6 @@ export default class Projects extends Component {
     
     return (
       <div className="container animated fadeInUpBig">
-        <span><h2 className="project-title">Abstract</h2><hr /></span>
-        <Abstract/>
         <Link to="/PPT">
           <span><h2 className="project-title">Plant Maintenance Tool{buttonMain}</h2><hr /></span>
         </Link>

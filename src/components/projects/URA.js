@@ -4,7 +4,7 @@ import '../../App.css';
 export default class URA extends Component {
   render() {
     return (
-      <div className="animated fadeInUpBig">
+      <div className="container-full animated fadeInUpBig">
         <span><h2 className="project-title">Undergrad Research Assistant</h2><hr /></span>
         <p className="main-text">> By a combination of being in the right place at the right time, I was given the opportunity to work
         under a PhD student at the crash testing lab on campus. The focus of my team’s research was high strength

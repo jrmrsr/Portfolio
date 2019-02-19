@@ -4,7 +4,7 @@ import '../../App.css';
 export default class EWB extends Component {
   render() {
     return (
-      <div className="animated fadeInUpBig">
+      <div className="container-full animated fadeInUpBig">
         <span><h2 className="project-title">Engineers Without Borders</h2><hr /></span>
         <p className="main-text">> Engineers Without Borders is an organization that aims to fight systemic change and use
             design thinking to create solutions for problems like poverty, education, and sustainability.
