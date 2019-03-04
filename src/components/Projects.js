@@ -27,6 +27,7 @@ export default class Projects extends Component {
         <Link to="/EWB">
           <span><h2 className="project-title">Engineers Without Borders{buttonMain}</h2><hr /></span>
         </Link>
+        <span><h2 className="project-title">Work Experience</h2><hr /></span>
         <WorkMap/>  
       </div>
    );
