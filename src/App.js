@@ -3,6 +3,7 @@ import Projects from './components/Projects';
 import About from './components/About';
 import EverydayCal from './components/projects/EverydayCal';
 import PlantProblemTool from './components/projects/PlantProblem';
+import StewartPlatform from './components/projects/StewartPlatform';
 import SolarCar from './components/projects/SolarCar';
 import URA from './components/projects/URA';
 import WarriorHome from './components/projects/WarriorHome';
@@ -65,6 +66,7 @@ class App extends Component {
                 <Route path="/PPT" component={PlantProblemTool}/>
                 <Route path="/MidnightSun" component={SolarCar}/>
                 <Route path="/EverydayCalendar" component={EverydayCal}/>
+                <Route path="/StewartPlatform" component={StewartPlatform}/>
                 <Route path="/URA" component={URA}/>
                 <Route path="/WarriorHome" component={WarriorHome}/>
                 <Route path="/EWB" component={EWB}/>

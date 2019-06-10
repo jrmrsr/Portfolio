@@ -18,6 +18,9 @@ export default class Projects extends Component {
         <Link to="/EverydayCalendar">
           <span><h2 className="project-title">The Everyday Calendar{buttonMain}</h2><hr /></span>
         </Link>
+        <Link to="/StewartPlatform">
+          <span><h2 className="project-title">Stewart Platform{buttonMain}</h2><hr /></span>
+        </Link>
         <Link to="/URA">
           <span><h2 className="project-title">Undergrad Research Assistant{buttonMain}</h2><hr /></span>
         </Link>
