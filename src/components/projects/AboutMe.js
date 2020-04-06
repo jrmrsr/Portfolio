@@ -6,7 +6,7 @@ export default class AboutMe extends Component {
     return (
       <div className="container-full animated fadeInLeft">
         <span><h2 className="project-title animated fadeInLeft">About</h2><hr className="animated fadeInLeft" /></span>
-        <span><p  className="animated fadeInLeft main-text" style={{marginTop:0}}>> I believe that our ability to 
+        <span><p  className="animated fadeInLeft main-text" style={{marginTop:0}}>I believe that our ability to 
     shape our environment is the most powerful tool humanity has. Large, physical manifestations of <a className="link" href="https://big.dk/#projects-king" target="_blank" rel="noopener noreferrer">architecture</a> can 
     bluntly show the reshaping of our world, but even innocuous seeds of knowledge can create impactful changes. 
     To design is to present a vision of the world and follow through with it. My passion is to help people through 

@@ -8,7 +8,7 @@ export default class SolarCar extends Component {
       <div className="container-full animated fadeInUpBig">
         <span><h2 className="project-title">Midnight Sun Solar Car</h2><hr /></span>
         <span className="img-container"><img src={solarCarPic} alt="Solar Car in Action"/></span>
-        <p className="main-text">> High performance vehicles were my introduction into engineering and my motivation in
+        <p className="main-text">High performance vehicles were my introduction into engineering and my motivation in
           joining a vehicle design team. I joined Midnight Sun last summer and spent a lot of that 
           time helping build last year’s solar car and learning what it takes to build an efficient car. 
           This year, I am focusing on the structural composites that will make the chassis lighter and

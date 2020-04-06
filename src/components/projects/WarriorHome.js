@@ -6,7 +6,7 @@ export default class WarriorHome extends Component {
     return (
       <div className="container-full animated fadeInUpBig">
         <span><h2 className="project-title">Warrior Home</h2><hr /></span>
-        <p className="main-text">> As part of the Race to Zero Competition, The Warrior Home Design Team aimed to design a net-zero
+        <p className="main-text">As part of the Race to Zero Competition, The Warrior Home Design Team aimed to design a net-zero
             energy home that could be built by Habitat for Humanity. The challenge was to use building technology
             and materials that could meet the ambitious sustainability goal while also creating a home that a
             low-income community could afford. My focus was on the architectural design of the home, working

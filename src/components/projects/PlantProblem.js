@@ -10,7 +10,7 @@ export default class PlantProblemTool extends Component {
                 <span><h2 className="project-title">Plant Maintenance Tool</h2><hr /></span>
                 <span className="img-container"><img src={EventSearch} alt="Events Search"/></span>
                 <span className="img-container"><img src={NMTER} alt="NMTER Graph"/></span>
-                <p className="main-text"> > How do you know whether a customer's connectivity problems are due to a faulty
+                <p className="main-text">How do you know whether a customer's connectivity problems are due to a faulty
                     modem in their homes, or infrastructure related? How do you monitor your infrastructure 
                     for large scale, multi-customer issues? These are the problems that the custom plant
                     maintenance tool addresses. My mentor at Shaw had a vision for a data-driven tool that

@@ -4,7 +4,7 @@ body {
   color: #313131;
 }
 hr {
-  height: 10px;
+  height: 2.5px;
   text-align: left;
   background-color: #313131;
   border: none;
@@ -301,7 +301,7 @@ a {
 
 @media screen and (min-width: 1300px) {
   hr {
-    height: 10px;
+    height: 5px;
     width: 100px; 
   }  
   h1 {

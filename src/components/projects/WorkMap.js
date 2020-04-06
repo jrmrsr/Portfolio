@@ -18,7 +18,9 @@ export default class WorkMap extends Component {
       sfLat: 37.7749,
       sfLng: -122.4194,
       charlottetownLat: 46.2382,
-      charlottetownLng: -63.1311
+      charlottetownLng: -63.1311,
+      waterlooLat: 43.4643,
+      waterlooLng: 80.5204
     }
   }
 
@@ -29,6 +31,8 @@ export default class WorkMap extends Component {
     const ottawaPosition = [this.state.ottawaLat, this.state.ottawaLng]
     const sfPosition = [this.state.sfLat, this.state.sfLng]
     const charlottetownPosition = [this.state.charlottetownLat, this.state.charlottetownLng]
+    const waterlooPosition = [this.state.waterlooLat, this.state.waterlooLng]
+
     return (
       <Map center={position} zoom={this.state.zoom} className="map-container">
         <TileLayer
@@ -37,24 +41,29 @@ export default class WorkMap extends Component {
         />
         <Marker position={calgaryPosition}>
           <Popup>
-            <h3>> Software Development Intern<br/>> May – Aug 2017<br/>> Shaw Communications Inc.</h3>
+            <h3>Software Development Intern<br/>May – Aug 2017<br/>Shaw Communications Inc.</h3>
           </Popup>
         </Marker>
         <Marker position={torontPosition}>
           <Popup>
-            <h3>> Junior Mechanical Designer<br/>> Jan – Apr 2018<br/>> Smith + Andersen</h3>
+            <h3>Junior Mechanical Designer<br/>Jan – Apr 2018<br/>Smith + Andersen</h3>
           </Popup>
         </Marker><Marker position={ottawaPosition}>
           <Popup>
-            <h3>> Quality Assurance Intern<br/>> Sept – Dec 2016<br/>> Epiphan Systems Inc.</h3>
+            <h3>Quality Assurance Intern<br/>Sept – Dec 2016<br/>Epiphan Systems Inc.</h3>
           </Popup>
         </Marker><Marker position={sfPosition}>
           <Popup>
-            <h3>> Automation Intern<br/>> Sept - Dec 2018<br/>> FutureAdvisor</h3>
+            <h3>Automation Intern<br/>Sept - Dec 2018<br/>FutureAdvisor</h3>
           </Popup>
         </Marker><Marker position={charlottetownPosition}>
           <Popup>
-            <h3>> FLASHLamp Project<br/>> Jan – Apr 2016<br/>> Canada Food Inspection Agency</h3>
+            <h3>FLASHLamp Project<br/>Jan – Apr 2016<br/>Canada Food Inspection Agency</h3>
+          </Popup>
+        </Marker>
+        <Marker position={waterlooPosition}>
+          <Popup>
+            <h3>Propulsion Systems Intern<br/>May – Aug 2019<br/>FLIR</h3>
           </Popup>
         </Marker>
       </Map>
