@@ -41,10 +41,6 @@ class App extends Component {
             <header className="App-header">
             </header>
             <div className={this.state.hideNav ? "topmenu" : "sidebar"}>
-              {/* <div className={this.state.hideNav ? "off" : "container-full"}>
-                {!this.state.hideNav && <span className="logo-container"><Icons name="logo" width={`100%`} height={`150px`} className="logo"/></span>}
-              </div> */}
-              {/* {!this.state.hideNav && <hr/>} */}
                 <Link to="/" className={this.state.hideNav ? "link-button" : ""}><button className="sidebar-button" 
                   autoFocus
                   // Using ID to get over mobile browser limitations with autofocus,
